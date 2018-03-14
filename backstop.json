@@ -7,27 +7,52 @@
       "height": 480
     },
     {
-      "label": "tablet",
+      "label": "desktop",
       "width": 1024,
       "height": 768
     }
   ],
   "onBeforeScript": "chromy/onBefore.js",
-  "onReadyScript": "chromy/onReady.js",
+  "onReadyScript": "chromy/onReady.js",  
   "scenarios": [
-    {
+      {
+      "label": "homepage",
+      "referenceUrl": "http://www-stage.vividseats.test",
+      "url": "http://www-web-visual-hack.vividseats.test",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "removeSelectors": [".link-list zebra", ".card-body"],
+      "postInteractionWait": "",
+      "selectors": "",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+     },
+{
+      "label": "Performer Page",
+      "referenceUrl": "http://www-stage.vividseats.test/concerts/elton-john-tickets.html",
+      "url": "http://www-web-visual-hack.vividseats.test/concerts/elton-john-tickets.html",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "postInteractionWait": "",
+      "selectors": "",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+     },
+     {
       "label": "nav bar - help",
-      "url": "http://www-stage.vividseats.test/concerts/elton-john-tickets/elton-john-caesars-palace-2-22-2366418.html",
+      "url": "http://www-stage.vividseats.test",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
       "delay": 0,
       "hideSelectors": [],
       "removeSelectors": [],
-      "clickSelector": ".popup-cancel.popup-button",
-      "hoverSelector": "li.navbar-right.dropdown",
       "postInteractionWait": "",
-      "selectors": "",
+      "selectors": ".col-sm-5",
       "selectorExpansion": true,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
@@ -38,23 +63,39 @@
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
-      "delay": 0,
-      "hideSelectors": [],
-      "removeSelectors": [],
+      "delay": 1000,
       "clickSelector": ".popup-cancel.popup-button",
       "hoverSelector": ".buyer-guarantee",
-      "postInteractionWait": "",
+      "hideSelectors": [],
+      "removeSelectors": [],
       "selectors": "",
       "selectorExpansion": true,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
-    }	  
+    },
+    {
+      "label": "Tickets Details Optimizely Test - Variant A - Buy",
+      "url": "http://www-stage.vividseats.test/concerts/elton-john-tickets/elton-john-caesars-palace-2-21-2366417.html?optimizely_force_web_3908=variant_b",
+      "referenceUrl": "http://www-stage.vividseats.test/concerts/elton-john-tickets/elton-john-caesars-palace-2-21-2366417.html?optimizely_force_web_3908=variant_a",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 200,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "postInteractionWait": "",
+      "clickSelector": ".popup-cancel.popup-button",
+      "selectors": "",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    }
+	  
 ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
     "bitmaps_test": "backstop_data/bitmaps_test",
-    "engine_scripts": "backstop_data/engine_scripts",
-    "html_report": "backstop_data/html_report",
+     "engine_scripts": "backstop_data/engine_scripts",
+     "html_report": "backstop_data/html_report",
     "ci_report": "backstop_data/ci_report"
   },
   "report": ["browser"],
