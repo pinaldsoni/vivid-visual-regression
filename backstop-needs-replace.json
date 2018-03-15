@@ -17,8 +17,8 @@
   "scenarios": [
       {
       "label": "homepage",
-      "referenceUrl": "http://www-stage.vividseats.test",
-      "url": "http://www-web-visual-hack.vividseats.test",
+      "referenceUrl": "http://www-{CONTROL_BRANCH}.vividseats.test",
+      "url": "http://www-{VARIANT_BRANCH}.vividseats.test",
       "readyEvent": "",
       "readySelector": "",
       "delay": 0,
@@ -31,8 +31,8 @@
      },
 {
       "label": "Performer Page",
-      "referenceUrl": "http://www-stage.vividseats.test/concerts/elton-john-tickets.html",
-      "url": "http://www-web-visual-hack.vividseats.test/concerts/elton-john-tickets.html",
+      "referenceUrl": "http://www-{CONTROL_BRANCH}.vividseats.test/concerts/elton-john-tickets.html",
+      "url": "http://www-{VARIANT_BRANCH}.vividseats.test/concerts/elton-john-tickets.html",
       "readyEvent": "",
       "readySelector": "",
       "delay": 0,
@@ -44,8 +44,8 @@
      },
      {
       "label": "nav bar - help",
-      "url": "http://www-stage.vividseats.test",
-      "referenceUrl": "",
+      "url": "http://www-{CONTROL_BRANCH}.vividseats.test",
+      "referenceUrl": "http://www-{VARIANT_BRANCH}.vividseats.test",
       "readyEvent": "",
       "readySelector": "",
       "delay": 0,
@@ -59,8 +59,8 @@
     },
     {
       "label": "production header - buyer guarantee",
-      "url": "http://www-stage.vividseats.test/concerts/elton-john-tickets/elton-john-caesars-palace-2-22-2366418.html",
-      "referenceUrl": "",
+      "url": "http://www-{CONTROL_BRANCH}.vividseats.test/concerts/elton-john-tickets/elton-john-caesars-palace-2-22-2366418.html",
+      "referenceUrl": "http://www-{VARIANT_BRANCH}.vividseats.test/concerts/elton-john-tickets/elton-john-caesars-palace-2-22-2366418.html",
       "readyEvent": "",
       "readySelector": "",
       "delay": 1000,
@@ -75,8 +75,8 @@
     },
     {
       "label": "Tickets Details Optimizely Test - Variant A - Buy",
-      "url": "http://www-stage.vividseats.test/concerts/elton-john-tickets/elton-john-caesars-palace-2-21-2366417.html?optimizely_force_web_3908=variant_b",
-      "referenceUrl": "http://www-stage.vividseats.test/concerts/elton-john-tickets/elton-john-caesars-palace-2-21-2366417.html?optimizely_force_web_3908=variant_a",
+      "url": "http://www-{CONTROL_BRANCH}.vividseats.test/concerts/elton-john-tickets/elton-john-caesars-palace-2-21-2366417.html?optimizely_force_web_3908=variant_b",
+      "referenceUrl": "http://www-{VARIANT_BRANCH}.vividseats.test/concerts/elton-john-tickets/elton-john-caesars-palace-2-21-2366417.html?optimizely_force_web_3908=variant_a",
       "readyEvent": "",
       "readySelector": "",
       "delay": 200,
